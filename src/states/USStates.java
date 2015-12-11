@@ -24,7 +24,7 @@ public class USStates {
                 stateCounter.put('a', letterCounter++);
             }
         }
-        
+
         return stateCounter;
     }
 
