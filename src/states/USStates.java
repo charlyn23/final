@@ -16,7 +16,16 @@ public class USStates {
      */
     public static Map<Character, Integer> countStatesByFirstLetter() {
         // TODO: Write this method.
-        return null;
+        Map<Character, Integer> stateCounter = null;
+        int letterCounter = 0;
+
+        for (int i = 0; i < STATE_NAMES.length; i++) {
+            if (STATE_NAMES[i].charAt(0)== 'a'){
+                stateCounter.put('a', letterCounter++);
+            }
+        }
+        
+        return stateCounter;
     }
 
     public static void main(String[] args) {
